@@ -24,7 +24,7 @@ Token là mã xác thực luôn được gắn vào Header của mỗi Request n
 #### Request tạo Token
 Thuộc tính | Giá trị
 --- | ---
-Đường dẫn | /v1/api/auth
+Đường dẫn | /api/v1/auth
 Phương thức | POST
 Xác thực | Không
 
@@ -46,7 +46,7 @@ expiresIn | number | Thời gian hiệu lực của token (giây)
 #### Request Làm mới Token
 Thuộc tính | Giá trị
 --- | ---
-Đường dẫn | /v1/api/auth/refreshToken
+Đường dẫn | /api/v1/auth/refreshToken
 Phương thức | POST
 Xác thực | Không
 
@@ -78,7 +78,7 @@ Trả về danh sách các Việc làm của đối tác
 Các thuộc tính bao gồm:
 Thuộc tính | Giá trị 
 --- | ---
-Đường dẫn | /v1/api/jobs
+Đường dẫn | /api/v1/jobs
 Phương thức | GET
 Xác thực | Có
 Loại | json
@@ -93,7 +93,7 @@ perPage | Query | Số lượng việc làm trên mỗi trang hiện tại
 
 Mẫu ví dụ
 
-https://ms.vietnamworks.com/v1/api/jobs?status=ONLINE&keyword=accountant&page=1&itemPerPage=20
+https://ms.vietnamworks.com/api/v1/jobs?status=ONLINE&keyword=accountant&page=1&itemPerPage=20
 
 ##### Dữ liệu trả về
 Thông tin chung
@@ -138,7 +138,7 @@ page | Query | Số trang hiện tại
 perPage | Query | Số lượng việc làm trên mỗi trang hiện tại
 
 Ví dụ: 
-https://ms.vietnamworks.com/v1/api/jobs/xxxxxx/application?page=1&itemPerPage=20
+https://ms.vietnamworks.com/api/v1/jobs/xxxxxx/application?page=1&itemPerPage=20
 
 ##### Dữ liệu trả về
 Dữ liệu chung
@@ -161,5 +161,3 @@ downloadLink | string | Đường dẫn tải về Tệp ứng tuyển
 originalLink | string | Đường dẫn gốc trên trang quản lý VietnamWorks
 status | string | Trạng thái của Ứng tuyển
 createdDate | string | Thời gian tạo
-
-
