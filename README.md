@@ -34,6 +34,26 @@ Tham số | Loại | Giải thích
 clientId | number | CLIENT_ID được cung cấp
 partnerCode | string | PARTNER CODE được cung cấp
 secretKey | string | SECRET KEY được cung cấp
+expiresIn | number | Thời gian hiệu lực của token (giây)
+
+#### Dữ liệu trả về
+Thuộc tính | Loại | Giải thích
+--- | --- | ---
+accessToken | number | Token truy cập
+refreshToken | array | Token dùng để xin cấp lại sau khi Token truy cập hết hạn
+expiresIn | number | Thời gian hiệu lực của token (giây)
+
+#### Request Làm mới Token
+Thuộc tính | Giá trị
+--- | ---
+Đường dẫn | /v1/api/auth/refreshToken
+Phương thức | POST
+Xác thực | Không
+
+Các tham số
+Tham số | Loại | Giải thích 
+--- | --- | ---
+refreshToken | string | refreshToken được cung cấp trước đó
 
 #### Dữ liệu trả về
 Thuộc tính | Loại | Giải thích
